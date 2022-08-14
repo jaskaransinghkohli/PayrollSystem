@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Userform</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="Insertrecord" method="post">
+        
+        
+            <style>
+body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 86%;
+    overflow: auto;
+    position: absolute;
+    top:90px;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+li.dropdown{
+    display:inline-block;
+}
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background-color:#f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+a.dropdown-content a{
+    color:black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display:block;
+    text-align: left;
+}
+.dropdown-content a:hover{
+    background-color:#f1f1f1;
+   }
+   .dropdown:hover .dropdown-content{
+       display: block;
+   }
+
+</style>
+    
+    <h style="position:absolute;font-family: Footlight MT Light; background: lemonchiffon;color:black;width:100%;height:90px;font-weight: bold;font-size: 25px;text-align: center;">Sentinels Security Private Limited</br>40/92,40/93 CR Park </br>New Delhi-110020 </h>
+            <h1 style="position:absolute;font-family: Footlight MT Light; background: lemonchiffon;color:blue;font-weight: bold;font-size: 15px;text-align: right;">ESTD. IN 1982</br>An ISO 9001-2008 Certified Company</br>(Licensed Security Agency) </h1>
+<ul>
+  <li><a href="form.html">Home</a></li>
+  <li><a class="active" href="Userform.html">User Form</a></li>
+  <li class="dropdown"><a href="Payroll.html" class="dropbtn">Payroll Management</a>
+      <div class="dropdown-content">
+          <a href="">Payroll Report</a>
+          <a href="">Bonus Allowance and Dedection</a>
+      </div>
+  </li>
+  <li><a href="#about">Complience</a></li>
+</ul>        
+            <center>
+            <table  style="position: absolute;top:90px;left:350px;text-align: center;">
+           <tr>Employee form</tr>
+            <tr><td>Employee Code:</td><td><input type="text" name="ec"></td></tr>
+            <tr><td>Name:</td><td><input type="text" name="name"></td></tr>
+            <tr><td>Father Name:</td><td><input type="text" name="fname"></td></tr>
+            <tr><td>Address:</td><td><input type="text" name="add"></td></tr>
+            <tr><td>Basic Rate:</td><td><input type="text" name="add2"></td></tr>
+            <tr><td>Degination:</td><td><input type="text" name="add3"></td></tr>
+            <tr><td>Phone No:</td><td><input type="text" name="phone"></td></tr>
+            <tr><td>Image:</td><td><input type="file" name="file"></td></tr>
+            <tr><td></td><td><input type="submit" value="Insert Record" name="insert"></td></tr>
+        </table>
+            </center>
+        </form>
+    </body>
+</html>
